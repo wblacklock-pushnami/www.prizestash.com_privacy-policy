@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PrizeStash</title>
+  <link rel="icon" type="image/png" href="https://prizestash.com/wp-content/uploads/2023/04/cropped-PrizeStashIcon-32x32.png">
+  <link rel="apple-touch-icon" href="https://prizestash.com/wp-content/uploads/2023/04/cropped-PrizeStashIcon-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --push-purple: #5C3DE4;
+      --dark-purple: #312679;
+      --clear: #F1F1F1;
+      --ink: #1E1E1F;
+      --ink-2: #4a4a4d;
+      --line: #d2d6e0;
+      --surface: #FFFFFF;
+      --purple-tint: #e6e2f8;
+      --link-blue: #1d4ed8;
+      --link-blue-dark: #1e3a8a;
+      --blue-tint: #dbeafe;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; background: var(--surface); }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--clear);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .layout, .simple-layout { flex: 1 0 auto; }
+    .site-footer { flex-shrink: 0; }
+    h1, h2, h3 { font-family: 'Mada', sans-serif; margin: 0 0 12px; line-height: 1.25; color: var(--ink); }
+    p, li { margin: 0 0 16px; }
+    a { color: var(--link-blue); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { color: var(--link-blue-dark); }
+    a:focus-visible { outline: 2px solid var(--link-blue); outline-offset: 2px; border-radius: 4px; }
+    main a { color: var(--link-blue); }
+    main a:hover { color: var(--link-blue-dark); }
+
+    .skip-link {
+      position: absolute; left: -999px; top: 0;
+      background: var(--push-purple); color: white;
+      padding: 8px 12px; border-radius: 8px; z-index: 100; font-weight: 600;
+    }
+    .skip-link:focus { left: 8px; top: 8px; }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      height: 64px;
+      display: flex; align-items: center;
+    }
+    .header-inner {
+      max-width: 1100px; margin: 0 auto; width: 100%;
+      padding: 0 24px;
+      display: flex; align-items: center;
+    }
+    .brand {
+      font-family: 'Mada', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .brand:hover { color: var(--ink); }
+
+    /* Layout */
+    .layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+    }
+    .toc {
+      position: sticky;
+      top: 88px;
+      align-self: start;
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+    }
+    .toc h2 {
+      font-family: 'Mada', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      margin: 0 0 12px;
+    }
+    .toc ol { list-style: none; padding: 0; margin: 0; }
+    .toc li { margin: 0 0 4px; }
+    .toc a {
+      display: block;
+      padding: 6px 10px;
+      font-size: 13px;
+      color: var(--ink-2);
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      border-radius: 0 6px 6px 0;
+      transition: all 0.15s;
+    }
+    .toc a:hover,
+    .toc a:focus-visible {
+      color: var(--link-blue);
+      background: var(--blue-tint);
+      border-left-color: var(--link-blue);
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 40px 36px;
+      max-width: 720px;
+    }
+    article > h1 {
+      font-size: clamp(28px, 4vw, 36px);
+      font-weight: 700;
+      margin: 0 0 24px;
+      letter-spacing: -0.01em;
+      text-align: left;
+    }
+    article section { margin-bottom: 32px; scroll-margin-top: 80px; }
+    article section:last-child { margin-bottom: 0; }
+    article h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0 0 12px;
+      padding-top: 8px;
+    }
+    article h3 { font-size: 17px; font-weight: 600; margin-top: 20px; }
+    article p, article li { color: var(--ink); line-height: 1.65; }
+    article ul, article ol { padding-left: 22px; margin-bottom: 16px; }
+    article li { margin-bottom: 6px; }
+
+    /* Data tables (e.g. CCPA category table) */
+    article .table-wrap { overflow-x: auto; margin: 0 0 20px; border: 1px solid var(--line); border-radius: 8px; }
+    article table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+    article table th, article table td {
+      text-align: left; vertical-align: top;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      line-height: 1.5;
+    }
+    article table tr:last-child th, article table tr:last-child td { border-bottom: none; }
+    article table thead th {
+      background: #f6f7fb;
+      font-family: 'Mada', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      white-space: nowrap;
+    }
+    article table tbody th { font-family: 'Mada', sans-serif; font-weight: 600; color: var(--ink); width: 26%; }
+    article table .collected { text-align: center; width: 90px; font-family: 'Mada', sans-serif; font-weight: 700; }
+    article table .collected.yes { color: #1cb526; }
+    article table .collected.no { color: #a3a3a8; }
+    @media (max-width: 640px) {
+      article table { font-size: 13px; }
+      article table th, article table td { padding: 10px 10px; }
+    }
+    article .intro {
+      font-size: 17px;
+      color: var(--ink);
+      padding: 16px 20px;
+      background: var(--purple-tint);
+      border-radius: 8px;
+      border-left: 3px solid var(--push-purple);
+      margin-bottom: 24px;
+    }
+    .contact-block {
+      padding: 16px 20px;
+      background: var(--purple-tint);
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+    .contact-block p { margin: 0 0 4px; }
+
+    /* Form success state */
+    .form-success {
+      text-align: center;
+      padding: 24px 0;
+    }
+    .form-success__check {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      background: #1cb526;
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+    .form-success__check svg { width: 36px; height: 36px; }
+    .form-success h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    .form-success p { color: var(--ink-2); }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 24px;
+      background: var(--surface);
+    }
+    .footer-inner {
+      max-width: 1000px; margin: 0 auto;
+      display: flex; flex-direction: column;
+      gap: 12px; align-items: center; text-align: center;
+    }
+    .footer-inner p { margin: 0; font-size: 13px; color: var(--ink-2); }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; }
+    .footer-links a {
+      color: var(--ink-2); text-decoration: none;
+      padding: 0 12px; border-right: 1px solid var(--line);
+      font-size: 13px;
+    }
+    .footer-links a:last-child { border-right: none; }
+    .footer-links a:hover { color: var(--link-blue); }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; gap: 0; padding: 24px 16px 48px; }
+      .toc { display: none; }
+      article { padding: 28px 22px; border-radius: 12px; }
+    }
+</style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://www.prizestash.com/" class="brand">PrizeStash</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#why-collect-data">1. Why does PrizeStash.com collect data on consumers?</a></li>
+        <li><a href="#sources">2. From whom does PrizeStash.com collect consumer data?</a></li>
+        <li><a href="#sharing">3. Does PrizeStash.com share consumer data with third parties?</a></li>
+        <li><a href="#cookies">4. What are Cookies and other tracking technologies?</a></li>
+        <li><a href="#opt-out">5. Can I opt-out of receiving email from PrizeStash.com?</a></li>
+        <li><a href="#third-party-sites">6. What about third-party websites?</a></li>
+        <li><a href="#security">7. What does PrizeStash.com do to keep their Website secure?</a></li>
+        <li><a href="#outside-us">8. Does PrizeStash.com collect information from Users outside of the United States?</a></li>
+        <li><a href="#children">9. Does PrizeStash.com collect personal information from children?</a></li>
+        <li><a href="#ca-privacy-rights">10. Your California Privacy Rights.</a></li>
+      </ol>
+    </aside>
+
+    <main id="main">
+      <article>
+        <h1>Privacy Policy</h1>
+<p>For California Consumers, please <a href="https://www.prizestash.com/ccpa/">click here</a> for information on your rights under the California Consumer Protection Act to access and control the use your data.</p>
+      <section id="why-collect-data">
+        <h2>1. Why does PrizeStash.com collect data on consumers?</h2>
+
+        <p>PrizeStash.com collects consumer data for the following business and commercial purposes:</p>
+        <ul>
+          <li><strong>Relevancy Purposes</strong>, to provide Users with the most relevant experiences on our Website that we think are likely to be of interest to you.</li>
+          <li><strong>Transactional Purposes</strong>, to contact Users with our offers and promotions.</li>
+          <li><strong>Technical Purposes</strong> to provide notices, updates, security alerts and support information.</li>
+          <li><strong>Customer Service Purposes</strong>, to communicate with you.</li>
+          <li><strong>Reporting Purposes</strong>, to share consumer data with third-party reporting services.</li>
+        </ul>
+    
+      </section>
+      <section id="sources">
+        <h2>2. From whom does PrizeStash.com collect consumer data?</h2>
+
+        <p>PrizeStash.com collects consumer data from sources in the following categories:</p>
+        <ul>
+          <li><strong>Direct from Consumer</strong>, information that you provide to us directly.</li>
+          <li><strong>Automatic Data Collection</strong>, collected automatically when you visit or register on our Website, such as internet protocol (IP) address, device ID, browser type, internet service provider (ISP), referring/exit pages, operating system, date/time stamp and/or click-stream data, and through the use of &ldquo;cookies&rdquo;, &ldquo;pixel tags&rdquo; and similar tracking technologies. For additional information on such tracking technologies, see Section 4 below.</li>
+        </ul>
+    
+      </section>
+      <section id="sharing">
+        <h2>3. Does PrizeStash.com share consumer data with third parties?</h2>
+
+        <p>PrizeStash.com shares consumer data with third parties in the following categories:</p>
+        <ul>
+          <li><strong>Marketing Partners</strong>, such as advertisers or app developers who wish to target and/or retarget our Users with relevant advertisements on other websites or magazine publishers and direct-to-consumer merchants who wish to communicate directly with our customers and Users through name rental or exchange.</li>
+          <li><strong>Acquisition Partners</strong>, such as publishers and other third parties who display PrizeStash.com ads on their websites.</li>
+          <li><strong>Service Providers</strong>, such as optimization and attribution partners, advertisers, product vendors and publishers.</li>
+          <li><strong>Media Intermediaries</strong>, such as buy-side advertising platforms, media vendors, brokers, agencies or other intermediaries.</li>
+          <li><strong>Aggregators</strong>, such as data management platforms, advertisers and publishers.</li>
+          <li><strong>Supporting Partners</strong>, such as marketing advisors, consultants and other third-party industry participants who work with us on a commercial basis or provide advice or services to us to support our business.</li>
+          <li><strong>Our preferred mailing partner</strong>, for the purpose of sending third party promotional email communications.</li>
+        </ul>
+    
+      </section>
+      <section id="cookies">
+        <h2>4. What are Cookies and other tracking technologies?</h2>
+
+        <p>PrizeStash.com and its partners may use cookies or similar technologies to recognize User access privileges to PrizeStash.com, analyze trends, administer the website, track users&rsquo; movements around the website, add advertisements for goods or services we think may interest you, estimate our audience size, and to gather demographic information about our user base as a whole.</p>
+        <p>A cookie is a small data file that a website can send to the browser on your computer when you link to that website. A cookie can hold information deposited in the file by a website, which can then be read by other sites. A cookie is not a computer program, it does not extract personal information about you or from your computer and it does not read data on your hard drive or instruct your computer to perform any function.</p>
+        <p>You may be able to use your browser to give you the option of accepting or rejecting a cookie whenever you visit a website. You may also be able to use your browser or other software to clear cookies from your browser any time you wish. However, deleting a website&rsquo;s cookie may mean that some features of our Website will not operate correct. Besides cookies, we may use web beacons, tracking pixels or similar tracking mechanisms to track your usage patterns on our Website. Like cookies, these small files do not store, record or share any personal information about you. We utilize third-party internet service providers to collect site traffic data using such tracking technologies that can be embedded in our Website. These service providers can then provide us with aggregate and anonymous usage data to allow us to improve our Website. This usage data cannot in be associated with any personal information we have about you.</p>
+    
+      </section>
+      <section id="opt-out">
+        <h2>5. Can I opt-out of receiving email from PrizeStash.com?</h2>
+
+        <p>Yes. Receiving email from PrizeStash.com is always optional.</p>
+    
+      </section>
+      <section id="third-party-sites">
+        <h2>6. What about third-party websites?</h2>
+
+        <p>By clicking on hyperlinks or banner advertisements on our Website, you may be redirected to websites owned and operated by advertisers and other third parties. PrizeStash.com does not control such websites or their owners and operators, and such websites are not subject to this Privacy Policy. Any data submitted on or collected by such a third-party website will be governed by the privacy policy on that website. We recommend that Users check the privacy policies of such third-party websites to see how their consumer data will be collected, processed and shared.</p>
+    
+      </section>
+      <section id="security">
+        <h2>7. What does PrizeStash.com do to keep their Website secure?</h2>
+
+        <p>We follow generally accepted standards to protect the personal information submitted to us, both during transmission and once it is received, including appropriate organizational, technological and physical safeguards commensurate with the sensitivity of the personal information in question. Although we believe that the measures, we take to safeguard your data are appropriate, we cannot guarantee its absolute security.</p>
+    
+      </section>
+      <section id="outside-us">
+        <h2>8. Does PrizeStash.com collect information from Users outside of the United States?</h2>
+
+        <p>Our Website is not intended to be used by visitors residing outside of the United States.</p>
+    
+      </section>
+      <section id="children">
+        <h2>9. Does PrizeStash.com collect personal information from children?</h2>
+
+        <p>Our Website is not intended for or directed to persons under the age of sixteen, and PrizeStash.com does not intend to collect personal information from individuals in this age group. If PrizeStash.com receives actual notice that a person under the age of sixteen has provided personal information to PrizeStash.com, PrizeStash.com will promptly (immediately, in the case of persons under the age of thirteen) remove such information from its files.</p>
+    
+      </section>
+      <section id="ca-privacy-rights">
+        <h2>10. Your California Privacy Rights.</h2>
+
+        <p>As detailed in this Privacy Policy, PrizeStash.com may use, collect, disclose and sell personal information about the consumers who respond to our offers. California consumers who wish to learn more about such practice and their rights under the California Consumer Protection Act, including the right to opt out of the sale of your data, may <a href="https://www.prizestash.com/ccpa/">click here</a>.</p>
+    
+      </section>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://www.prizestash.com/privacy-policy/">Privacy Policy</a>
+        <a href="https://www.prizestash.com/ccpa/">CCPA</a>
+        <a href="https://www.prizestash.com/official-rules/">Official Rules</a>
+      </div>
+      <p>© 2026 PrizeStash</p>
+    </div>
+  </footer>
+</body>
+</html>
